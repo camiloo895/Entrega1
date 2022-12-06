@@ -28,11 +28,12 @@ console.log("BIENVENID@ A LA TIENDA DE ROPA")
 
 if(consulta){
     let prenda = prompt ("¿que clase de prenda estás buscando? pantalon-camisa-jean-tenis.")
-    let talla = prompt ("Ingresa tu talla desde S hasta XL:")
-    camisa=5000
-    pantalon=10000
-    tenis=7000
-    jean=1500
+    let talla = prompt ("Ingresa tu talla desde s hasta xl:")
+    //declaracion precios
+    const camisa = 5000 
+    const pantalon =10000
+    const tenis=7000
+    const jean=1500
 
 switch(talla) {
     case "s":
@@ -60,7 +61,7 @@ let confirmacionB = prompt("¿Deseas Añadir otro articulo si / no?")
 
 while(confirmacionB="si"){
         let prendaB = prompt ("¿que te gustaría añadir? pantalon-camisa-jean-tenis.")
-        let talla2 = prompt ("Ingresa tu talla desde S hasta XL:")
+        let talla2 = prompt ("Ingresa tu talla desde s hasta xl:")
     
     switch(talla2) {
         case "s":
@@ -84,4 +85,9 @@ while(confirmacionB="si"){
         }
     break
 }
+
+function suma (valor){
+    return (talla+talla2)
+}
+
 
